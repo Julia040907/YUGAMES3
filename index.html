@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUGAMES</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Estilos</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ficção</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Entretenimento</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Idade média</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Multiplayer</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Pintar e criar</a>
+        </li>
+      </ul>
+      <img src="img/logo original.png" height="40" alt="Logo da YUGAMES" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">YU</b>GAMES</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">TEMAS</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ficção</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Idade Média</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Entretenimento</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Meus favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/favo.png" height="40" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/cadastro.png" height="40" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/usuário original.png" height="40" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Está dificil encontrar o seu jogo?</h2>
+    <p class="banner__texto">Busque na nossa estante!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Digite o nome do jogo aqui...">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Jogos lançados recentemente</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/imagem (1).jpg" height="400"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/capa game (10).webp" height="400"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/capa game(6).webp" height="400" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/capa game (2).webp" height="400" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/capa game (3).webp" height="400" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/capa game (4).jpg" height="400" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Você pode se interessar também...</h3>
+            <h2 class="descrição__titulo-livro">Games XBOX game ped</h2>
+            <p class="descrição__texto">
+              Com os jogos XBOX você tem mais opções e aventuras emocionantes para levar sua experiência gamer a outro nível!
+            </p>
+          </div>
+          <img src="img/angular xbox games.jpg" height="170" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/favo.png" height="40" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/cadastro.png" height="40" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Clique aqui!</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais acessados</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/capa game (12).jpg" height="400"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/capa game (14).webp" height="400" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/capa game (9).jpg" height="400" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/capa games (8).avif" height="400" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/capa game (7).jpg" height="400" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/capa game (5).jpg" height="400" alt="livro sobre acessibilidade"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/5 estrelinhas.png" height="40" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Criadora do mês</h3>
+            <h2 class="descrição__titulo-livro">Geovana R.M</h2>
+            <p class="descrição__texto"> Desenvolvedora de sofware e analista de sistema, Geovana é proficionalizada em sistema de dados.
+
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/geovana.jpg" height="300" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/favo.png" height="40" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/cadastro.png" height="40" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Clique aqui para mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TEMAS COM VISITAS RECENTES</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Mobile</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Entretenimento</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jogo de Lógica</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Multiplayer</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Offline</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Idade Média</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Game ped</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Veja as novidades!</h2>
+      <p class="contato__texto">
+        Novas atualizações de jogos online, multiplayer, game ped e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Parcerias de YUGAMES</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">GAMES</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Aming.avif" height="20" alt="Logo da Aming" />
+        <a href="#" class="lista-rodapé__link">Aming</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/company.avif" height="20" alt="Logo da company" />
+        <a href="#" class="lista-rodapé__link">Company</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Games online e multiplayers</li>
+      <li class="lista-rodapé__item">
+        <img src="img/gaming.avif" height="20" alt="Logo da gaming" />
+        <a href="#" class="lista-rodapé__link">Gaming</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/VRGAMES.avif" height="20" alt="Logo da VRGAMES" />
+        <a href="#" class="lista-rodapé__link">VrGames</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Trime.png" height="20" alt="Logo da Trime" />
+        <a href="#" class="lista-rodapé__link">Trime</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/zarla-nerd-tech-1x1-2400x2400-20210604-4hcp6b7649hbv6gmt93h.webp" height="20" alt="Logo da nerd zarla-nerd-tech-1x1-2400x2400-20210604-4hcp6b7649hbv6gmt93h" />
+        <a href="#" class="lista-rodapé__link">Nerd Tech</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/joystation.png" height="20" alt="Logo da joystation" />
+        <a href="#" class="lista-rodapé__link">Joystation</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/brazilgames.png" height="20" alt="Logo brazilgames" />
+        <a href="#" class="lista-rodapé__link">Brazil Games</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/-pc-gamer-.png" height="20" alt="Logo pc gamer" /> 
+        <a href="#" class="lista-rodapé__link">Pc Gamer</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
